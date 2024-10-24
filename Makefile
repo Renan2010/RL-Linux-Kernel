@@ -430,8 +430,8 @@ endif
 HOSTCC	= $(LLVM_PREFIX)clang$(LLVM_SUFFIX)
 HOSTCXX	= $(LLVM_PREFIX)clang++$(LLVM_SUFFIX)
 else
-HOSTCC	= gcc
-HOSTCXX	= g++
+HOSTCC	= clang
+HOSTCXX	= clang++
 endif
 HOSTRUSTC = rustc
 HOSTPKG_CONFIG	= pkg-config
